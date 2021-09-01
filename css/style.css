@@ -2,14 +2,144 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+html {
+  background: #E0E8FF;
 }
 
 body {
-  font-family: 'Red Hat Display', sans-serif;
   background: url('../images/pattern-background-desktop.svg');
+  background-size: 100%;
   background-repeat: no-repeat;
-  background: #E0E8FF;
   width: 100%;
   height: 100vh;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+main {
+  background: #FFF;
+  max-width: 416px;
+  border-radius: 1rem;
+  box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+}
+
+section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 0 2rem;
+  height: 100%;
+  width: 100%;
+}
+
+main h1 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #1F2E55;
+}
+
+main span {
+  text-align: center;
+  color: #717FA6;
+}
+
+main strong {
+  color: #1F2E55;
+}
+
+main img {
+  border-radius: 1rem 1rem 0 0;
+  width: 100%;
+}
+
+main .informations {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0;
+  background: #F7F9FF;
+  padding: 1.5rem 1rem;
+  width: 100%;
+  border-radius: 0.8rem;
+}
+
+main .informations .music-price {
+  display: flex;
+  align-items: center;
+}
+
+main .informations .price {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
+main .informations a {
+  color: #382AE1;
+  font-weight: 600;
+  font-size: 90%;
+  transition: all 0.3s;
+}
+
+main .informations a:hover {
+  color: #766CF1;
+  text-decoration: none;
+}
+
+main .informations img {
+  width: 3rem;
+  height: 3rem;
+}
+
+main button {
+  cursor: pointer;
+  padding: 1rem 0;
+  width: 100%;
+  background: #382AE1;
+  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+  border-radius: 0.8rem;
+  border: none;
+  color: #FFF;
+  font-weight: 600;
+  font-size: 95%;
+  margin-bottom: 1.5rem;
+  transition: background 0.3s;
+}
+
+main button:hover {
+  background: #766CF1;
+}
+
+#cancel-order {
+  text-decoration: none;
+  color: #717FA6;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+  transition: color 0.3s;
+}
+
+#cancel-order:hover {
+  color: #1F2E55;
+}
+
+@media screen and (max-width: 650px) {
+  body {
+    background: url('../images/pattern-background-mobile.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  section {
+    padding: 0 3rem;
+  }
+}
